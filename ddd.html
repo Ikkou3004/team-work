@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/phukien.css">
+</head>
+<style>
+    .sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  padding-top: 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  color: #818181;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  position: relative;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a.active {
+  color: yellow;
+}
+
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #ffcc00;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sidebar a.active::before {
+  opacity: 1;
+}
+.content {
+  margin-left: 250px;
+  padding: 16px;
+}
+
+.content h2 {
+  color: #333;
+}
+
+</style>
+<body>
+    <div class="category">
+        
+        <h4><a href="">Khuyến mãi</a></h4>
+        <ul class="subcategory">
+            <li><a href="#">Áo Sơ Mi</a></li>
+            <li><a href="#">Áo Polo-T shirt</a></li>
+            <li><a href="#">Quần Kaki</a></li>
+            <li><a href="#">Áo Sơmi</a></li>
+
+        </ul>
+    </div>
+
+    <div class="category">
+        <h4><a href="">Áo</a></h4>
+        <ul class="subcategory">
+            <li><a href="#">Blazer</a></li>
+            <li><a href="#">Áo Thun</a></li>
+            <li><a href="#">Áo Sơ Mi</a></li>
+            <li><a href="#">Áo T-shirt</a></li>
+
+        </ul>
+    </div>
+
+    <div class="category">
+        <h4><a href="">Quần</a></h4>
+        <ul class="subcategory">
+            <li><a href="#">Quần Short</a></li>
+            <li><a href="#">Quần Kaki</a></li>
+            <li><a href="#">Quần Jeam</a></li>
+            <li><a href="#">Quần jogger</a></li>
+
+        </ul>
+    </div>
+
+    <div class="category">
+        <h4><a href="">Phụ kiên</a></h4>
+        <ul class="subcategory">
+            <li><a href="#">Nhẫn</a></li>
+            <li><a href="#">Lắc Tay</a></li>
+            <li><a href="#">Thắt lưng</a></li>
+            <li><a href="#">Cà vạt</a></li>
+            <li><a href="#">Ví da</a></li>
+
+        </ul>
+       
+    </div> 
+    <div class="sidebar" id="mySidebar">
+        <h2>Danh Mục</h2>
+        <ul>
+          <li><a href="#" onclick="toggleColor(this)">Mục 1</a></li>
+          <li><a href="#" onclick="toggleColor(this)">Mục 2</a></li>
+          <li><a href="#" onclick="toggleColor(this)">Mục 3</a></li>
+          <li><a href="#" onclick="toggleColor(this)">Mục 4</a></li>
+        </ul>
+      </div>
+    
+      <div class="content">
+        <h2>Nội dung chính</h2>
+        <p>Chào mừng bạn đến với trang web của chúng tôi!</p>
+      </div>
+    <script>
+        function toggleColor(element) {
+       var sidebarLinks = document.querySelectorAll('.sidebar a');
+       sidebarLinks.forEach(function(link) {
+         link.classList.remove('active');
+       });
+     
+       element.classList.add('active');
+     }
+     
+       </script>
+</body>
+</html>

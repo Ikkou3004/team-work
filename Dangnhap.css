@@ -1,0 +1,136 @@
+/*--------------Body--------------*/
+.main-dangnhap form {
+    /* chỉnh form */
+    width: 350px;
+    /* Đặt chiều rộng mong muốn của form */
+    padding: 20px;
+    height: 350px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.main-dangnhap{
+    display: flex;
+}
+
+.main-dangnhap h1 {
+    margin-bottom: 50px;
+}
+
+
+
+.button-login input[type="submit"] {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.login-name input {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.password input {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.login-name label {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.password label {
+    font-weight: bolder;
+}
+
+/* Chỉnh cái ảnh */
+.image-signup {
+    
+    text-align: right;
+    padding: 20px;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 20px;
+}
+
+.image-signup img {
+    height: auto;
+    width: 80%;
+}
+
+form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.remember-pass {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*----------------------------header----------------------*/
+
+
+
+
+
+/*-------------------------------footer-----------------------*/
+
+.contact {
+    border-top: 1px solid black;
+    height: 300px;
+    display: flex;
+}
+
+.contact .info {
+    margin-left: 150px;
+}
+
+.contact .help {
+    margin: 0 200px;
+
+}
+
+.contact .help h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.help p {
+    margin-bottom: 10px;
+}
+
+.contact .connect .social {
+    display: flex;
+}
+
+.contact .connect h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.social a p i {
+    color: black;
+    margin-right: 10px;
+}

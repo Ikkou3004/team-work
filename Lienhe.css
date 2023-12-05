@@ -1,0 +1,91 @@
+/*--------------Body--------------*/
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container > div {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin: 5% 10%;
+}
+
+
+
+#fb-splits {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#fb-splits > div { 
+    width: 100%;
+}
+
+.button-send input[type="submit"] {
+    background-color: #000000;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+input {
+    padding: 5px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 15px;
+    width: 92%;
+}
+
+label {
+    font-weight: bolder;
+}
+
+/*----------------------------header----------------------*/
+
+
+
+
+
+/*-------------------------------footer-----------------------*/
+
+.contact {
+    border-top: 1px solid black;
+    height: 300px;
+    display: flex;
+}
+
+.contact .info {
+    margin-left: 150px;
+}
+
+.contact .help {
+    margin: 0 200px;
+
+}
+
+.contact .help h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.help p {
+    margin-bottom: 10px;
+}
+
+.contact .connect .social {
+    display: flex;
+}
+
+.contact .connect h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.social a p i {
+    color: black;
+    margin-right: 10px;
+}

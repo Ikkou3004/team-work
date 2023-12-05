@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/script.js"></script>
+</head>
+<style>
+    .main{
+        
+    }
+        .ctsp{
+            height: 300px;
+            background-color: antiquewhite;
+        }
+        .comment{
+            height: 300px;
+            background-color: rgb(132, 83, 18);
+        }
+        .same_product{
+            height: 100px;
+            background-color: rgb(18, 14, 10);
+        }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-top-icon">
+                    <i class="fa-sharp fa-solid fa-phone-volume" style="color: #030109;"></i>
+                </div>
+                <div class="header-top-text">
+                    <p class="header-top-text-1">hỗ trợ khách hàng:</p>
+                    <p class="header-top-text-2">0703475187</p>
+                </div>
+            </div>
+            <div class="header-bot">
+                <div class="logo">
+                    <a href="trangchu.html"><img src="img/logo.png" alt="logo-cs-shops" width="64px" height="58px"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="#">
+                            <li>Hàng mới</li>
+                        </a>
+                        <a href="#">
+                            <li>Áo</li>
+                        </a>
+                        <a href="#">
+                            <li>Quẩn</li>
+                        </a>
+                        <a href="#">
+                            <li>Phụ kiện</li>
+                        </a>
+                        <a href="#">
+                            <li>Liên hệ</li>
+                        </a>
+                        <a href="#">
+                            <li>Khuyến mãi</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="function">
+
+                    <ul>
+                        <li>
+                            <div class="search-container">
+                                <input type="text" class="search-box" placeholder="Bạn tìm gì"
+                                    onfocus="changePlaceholder(this)" onblur="restorePlaceholder(this)">
+                                <i class="fas fa-search search-icon"></i>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="icon-list">
+                                <a href="#"><i class="fas fa-heart icon"></i></a>
+                                <a href="dangnhap.html"><i class="fas fa-user icon"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart icon"></i></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="greeting">
+                <p> Chào mừng đến Clothes-Shop </p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="ctsp">
+
+            </div>
+            <div class="sanme_product">
+
+            </div>
+            <div class="comment">
+
+            </div>
+
+            
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <div class="info">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.png" alt="logo-cs-shops" width="64px" height="58px"></a>
+                        <p>Công ty thời trang Clothes-Shop</p>
+                        <p>Hotline: 1900 8079</p>
+                        <p>8:30 - 19:00 tất cả các ngày trong tuần</p>
+                    </div>
+                </div>
+                <div class="help">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <a href=""><p>Hỏi đáp</p></a>
+                    <a href=""><p>Hướng dẫn khách hàng</p></a>
+                </div>
+                <div class="connect">
+                    <h3>Kết nối</h3>
+                    <div class="social">
+                        <a href=""><p> <i class="fab fa-facebook" color="black"></i></p></a>
+                        <a href=""><p><i class="fab fa-instagram"></i></p></a>
+                        <a href=""><p><i class="fab fa-youtube"></i></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+
+
+// slide-show
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+const slides = document.getElementsByClassName("mySlides");
+
+if (n > slides.length) {
+slideIndex = 1;
+}
+
+if (n < 1) {
+slideIndex = slides.length;
+}
+
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+
+slides[slideIndex - 1].style.display = "block";
+}
+setInterval(function() {
+plusSlides(1);
+}, 1000);
+
+//slide slogan
+let currentSlideIndex = 0;
+showSlide(currentSlideIndex);
+
+function changeSlide(n) {
+showSlide(currentSlideIndex += n);
+}
+
+function currentSlide(n) {
+showSlide(currentSlideIndex = n);
+}
+
+function showSlide(n) {
+let slides = document.getElementsByClassName('slide');
+let dots = document.getElementsByClassName('dot');
+
+if (n >= slides.length) { currentSlideIndex = 0; }
+if (n < 0) { currentSlideIndex = slides.length - 1; }
+
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = 'none';
+}
+
+for (let i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(' active', '');
+}
+
+slides[currentSlideIndex].style.display = 'block';
+dots[currentSlideIndex].className += ' active';
+}
+
+
+  
+    </script>
+</body>
+
+</html>

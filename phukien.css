@@ -1,0 +1,155 @@
+
+/* -----------------------------------------------------------------ÁO----------------------------------------------------*/
+
+
+
+.move {
+    margin-left: 140px;
+    padding: 10px 0;
+}
+.move a{
+    color: black;
+}
+span {
+    margin: 0 10px;
+}
+.category ul{
+    list-style: none;
+   
+}
+.category ul li{
+    list-style: none;
+    padding-bottom: 15px;
+    width: 200px;
+}
+.category h4{
+    padding-bottom: 10px;
+    
+    width: 200px;
+}
+.category a{
+    text-decoration: none;
+    color: rgb(125, 26, 26);
+    width: 200px;
+   
+}
+.slide-product{
+    list-style: none;
+}
+.ao{
+    height: fit-content;
+    display: flex;
+    margin-left: 140px;
+    width: 1253px;
+   
+}
+#sidebar {
+    width: 200px;
+    padding-right: 100px;
+    
+
+}
+.subcategory li a{
+    color: #828080;
+}
+.sanphambanchay{
+   width: 155px;
+   color: black;
+}
+.sanphambanchay a{
+    color: black;
+ }
+.hangmoive{
+    margin-left: 140px;
+    padding: 5px 0;
+    display: flex;
+    color: black;
+    
+}
+.hangmoive h5{
+    margin-right: 40px;
+    color: black;
+}
+.hangmoive a{
+    color: black;
+}
+.hangmoive .bars-icon{
+    font-size: 20px;
+}
+.category {
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin-bottom: 5px;
+}
+.category a {
+    margin-bottom: 5px;
+    color: black;
+}
+.subcategory {
+    padding-left: 10px;
+}
+
+
+.slide-product{
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+
+.product{
+width: fit-content;
+margin-right: 60px;
+margin-bottom: 20px;
+}
+.product img{
+width: 297px;
+height: 380px;
+
+}
+.product .product-name{
+
+color: rgba(146, 146, 143, 1);
+
+
+
+}
+.heart-icon {
+           
+    margin: 0;
+    font-size: 25px;
+    cursor: pointer;
+   
+    transition: color 0.3s ease-in-out;
+    
+}
+
+
+.heart-icon.active {
+    color: red; /* Màu đỏ khi được chọn */
+}
+.component{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price{
+    padding:0;
+    margin: 0;
+}
+.phantrang{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* -----------------------------------------------------------------ÁO----------------------------------------------------*/
+.banner img {
+    margin-left: 140px;
+    margin-bottom: 15px;
+}
+span{
+    color: black;
+}
+strong{
+    color: black;
+}

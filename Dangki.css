@@ -1,0 +1,112 @@
+/*--------------Body--------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin-right: 10%;
+}
+
+.main-dangki{
+    display: flex;
+}
+.main-dangki form {
+    flex: 1;
+    width: 100px;
+    padding: 50px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+
+.main-dangki h1 {
+    margin-bottom: 50px;
+}
+
+
+.button-signup {
+    /* Chỉnh vị trí nút Đăng kí */
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 60%;
+}
+
+.button-signup input[type="submit"],input[type="reset"] {
+    /* Chỉnh màu nút Đăng kí */
+    background-color: #000000;
+    color: aliceblue;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.login-name input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.password input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.password-again input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.login-name label {
+    font-weight: bolder;
+}
+
+.password label {
+    font-weight: bolder;
+}
+
+
+.password-again label {
+    font-weight: bolder;
+}
+
+/* Chỉnh cái ảnh */
+.image-signup {
+    
+    text-align: right;
+    padding: 20px;
+    width: 40%;
+    margin-top: 10%;
+    margin-right: 20px;
+}
+
+.image-signup img {
+    height: auto;
+    width: 80%;
+}
+
+.thongbao{
+    color: rgb(40, 209, 40);
+    
+  
+}

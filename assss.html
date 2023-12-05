@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng ký</title>
+</head>
+
+<body>
+
+    <form method="POST" action="assss.html" onsubmit="return validateForm()">
+        <h1>Tạo tài khoản</h1>
+
+        <div class="login-name">
+            <label for="loginname">Tên đăng nhập:</label>
+            <input id="loginname" type="text" name="loginname" value="">
+            <div id="error-loginname" style="color: red;"></div>
+        </div>
+
+        <div class="password">
+            <label for="password">Mật khẩu:</label>
+            <input id="password" type="password" name="password" value="">
+            <div id="error-password" style="color: red;"></div>
+        </div>
+
+        <div class="password-again">
+            <label for="password_again">Nhập lại mật khẩu:</label>
+            <input id="password_again" type="password" name="password_again" value="">
+            <div id="error-password-again" style="color: red;"></div>
+        </div>
+
+        <div class="button-signup">
+            <input type="submit" value="Đăng ký">
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            var loginname = document.getElementById("loginname").value;
+            var password = document.getElementById("password").value;
+            var passwordAgain = document.getElementById("password_again").value;
+            var isValid = true;
+
+            // Kiểm tra và hiển thị thông báo tương ứng với từng trường
+            if (loginname === "") {
+                document.getElementById("error-loginname").textContent = "Vui lòng nhập tên đăng nhập.";
+                isValid = false;
+            } else {
+                document.getElementById("error-loginname").textContent = "";
+            }
+
+            if (password === "") {
+                document.getElementById("error-password").textContent = "Vui lòng nhập mật khẩu.";
+                isValid = false;
+            } else {
+                document.getElementById("error-password").textContent = "";
+            }
+
+            if (passwordAgain === "") {
+                document.getElementById("error-password-again").textContent = "Vui lòng nhập lại mật khẩu.";
+                isValid = false;
+            } else {
+                document.getElementById("error-password-again").textContent = "";
+            }
+
+            // Kiểm tra xem mật khẩu và nhập lại mật khẩu có khớp nhau không
+            if (password !== passwordAgain) {
+                document.getElementById("error-password-again").textContent = "Mật khẩu và nhập lại mật khẩu không khớp.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+
+</body>
+
+</html>
